@@ -1,0 +1,170 @@
+@charset "UTF-8"; 
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+@font-face {
+    font-family: 'lora';
+    src: url("fonte/Lora/Lora-VariableFont_wght.ttf") format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --cor1: #f6e8ea; 
+    --cor2: #878472;
+    --cor3: #261f23;
+    --cor4: #be8334;
+    --cor5: #1b1b1b;
+
+    --fonte-1: 'lora';
+    --fonte-2: "Dancing Script", cursive; 
+    --fonte-texto: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-menu: 'Montserrat';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-texto);
+}
+
+header {
+    background-color: var(--cor2);
+    /*background-image: linear-gradient(to bottom, var(--cor3), var(--cor5)); para degradê*/
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: var(--cor1);
+    font-family: 'lora', 'Times New Roman', Times, serif;
+    font-size: 3em;
+    margin-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.178);
+}
+
+header > p {
+    font-family: var(--fonte-2);
+    font-size: 2em;
+    padding-bottom: 20px;
+    color: var(--cor1);
+    max-width: 500px;
+    margin: auto;
+}
+
+nav {
+    background-color: var(--cor5);
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+nav > a:hover {
+    background-color: var(--cor4);
+    color: var(--cor5);
+}
+
+aside#fundo {
+    background-color: var(--cor3);
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 6px;
+    margin: 30px 0px;
+}
+
+main {
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 100px;
+    background-color: var(--cor1);
+    padding: 20px;
+}
+
+main img{
+    width: 100%;
+}
+
+main h1 {
+    margin-top: 30px;
+    font-family: var(--fonte-1);
+    text-align: center;
+    font-size: 2em;
+}
+
+main h2 {
+    font-family: var(--fonte-1);
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 1em;
+}
+
+main h3 {
+    font-family: var(--fonte-1);
+    text-align: center;
+    padding: 90px 0px 0px 0px;
+}
+
+main p {
+    margin: 60px 0px -40px 0px;
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+h4.notas {
+    background-color: var(--cor1);
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    margin-top: 300px ;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h4.notas > ol {
+    text-align: left;
+    width: 100%;
+    text-indent: 30px;
+    margin-top: 20px;
+    list-style-position: inside;
+    color: var(--cor5);
+    font-weight: 100;
+}
+
+h4.notas > ol > li {
+    margin: 20px;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: var(--cor4);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer a:hover {
+    background-color: var(--cor1);
+    border-radius: 5px;
+    text-decoration: none;
+}
